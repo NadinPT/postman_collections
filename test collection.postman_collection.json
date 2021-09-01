@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "8fad7925-293e-4f2c-9a45-782c10a49819",
+		"name": "test collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "onliner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "onliner.by",
+					"host": [
+						"onliner",
+						"by"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mail.ru",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "vk.ru",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
