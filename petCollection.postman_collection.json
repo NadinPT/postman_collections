@@ -97,7 +97,7 @@
                 "header": [],
                 "body": {
                     "mode": "raw",
-                    "raw": "{\n  \"id\": 0,\n  \"username\": \"sasha\",\n  \"firstName\": \"sasha\",\n  \"lastName\": \"vasha\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}",
+                    "raw": "{\n  \"id\": 0,\n  \"username\": \"test\",\n  \"firstName\": \"sasha\",\n  \"lastName\": \"vasha\",\n  \"email\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}",
                     "options": {
                         "raw": {
                             "language": "json"
@@ -137,13 +137,13 @@
                 "method": "DELETE",
                 "header": [],
                 "url": {
-                    "raw": "https://petstore.swagger.io/v2/user/sasha",
+                    "raw": "https://petstore.swagger.io/v2/user/test",
                     "host": [
                         "https://petstore.swagger.io/v2"
                     ],
                     "path": [
                         "user",
-                        "sasha"
+                        "test"
                     ]
                 }
             },
