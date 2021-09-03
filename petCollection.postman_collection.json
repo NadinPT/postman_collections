@@ -5,38 +5,6 @@
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
     },
     "item": [{
-            "name": "get user",
-            "event": [{
-                "listen": "test",
-                "script": {
-                    "exec": [
-                        "pm.test(\"Status code is 200\", function () {",
-                        "    pm.response.to.have.status(200);",
-                        "});",
-                        "pm.test(\"Response time is less than 200ms\", function () {",
-                        "    pm.expect(pm.response.responseTime).to.be.below(200);",
-                        "});"
-                    ],
-                    "type": "text/javascript"
-                }
-            }],
-            "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                    "raw": "https://petstore.swagger.io/v2/user/test",
-                    "host": [
-                        "https://petstore.swagger.io/v2"
-                    ],
-                    "path": [
-                        "user",
-                        "test"
-                    ]
-                }
-            },
-            "response": []
-        },
-        {
             "name": "create user",
             "event": [{
                 "listen": "test",
@@ -77,7 +45,7 @@
             "response": []
         },
         {
-            "name": "delete  user",
+            "name": "get user",
             "event": [{
                 "listen": "test",
                 "script": {
@@ -93,7 +61,7 @@
                 }
             }],
             "request": {
-                "method": "DELETE",
+                "method": "GET",
                 "header": [],
                 "url": {
                     "raw": "https://petstore.swagger.io/v2/user/test",
@@ -144,6 +112,38 @@
                     "path": [
                         "user",
                         "test"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "delete  user",
+            "event": [{
+                "listen": "test",
+                "script": {
+                    "exec": [
+                        "pm.test(\"Status code is 200\", function () {",
+                        "    pm.response.to.have.status(200);",
+                        "});",
+                        "pm.test(\"Response time is less than 200ms\", function () {",
+                        "    pm.expect(pm.response.responseTime).to.be.below(200);",
+                        "});"
+                    ],
+                    "type": "text/javascript"
+                }
+            }],
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "https://petstore.swagger.io/v2/user/sasha",
+                    "host": [
+                        "https://petstore.swagger.io/v2"
+                    ],
+                    "path": [
+                        "user",
+                        "sasha"
                     ]
                 }
             },
